@@ -1,0 +1,20 @@
+title: "Karim — Voice Over Artist & Creative"
+description: "Karim — Voice Over Artist & Creative"
+
+theme: null
+
+markdown: kramdown
+lsi: false
+incremental: false
+
+exclude:
+  - .github
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SECURITY.md
+  - "*.log"
+  - "*.tmp"
+  - "*.bak"
