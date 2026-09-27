@@ -1063,6 +1063,17 @@ document.addEventListener('DOMContentLoaded',function(){
       a.addEventListener('click', function(){ navList.classList.remove('open'); });
     });
   }
+  /* pause any other playing audio/video when a new one starts */
+var mediaEls = document.querySelectorAll('audio, video');
+mediaEls.forEach(function(media){
+  media.addEventListener('play', function(){
+    mediaEls.forEach(function(other){
+      if(other !== media && !other.paused){
+        other.pause();
+      }
+    });
+  });
+});
 });
 </script>
 </body>
